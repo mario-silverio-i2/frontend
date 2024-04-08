@@ -1,0 +1,71 @@
+.table-container {
+  max-width: 50%;
+  margin: auto;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+table.mat-elevation-z8 {
+  width: 100%;
+  margin: auto;
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  border-color: currentColor;
+}
+
+.table-container > h2 {
+  color: #007bff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-shadow: 2px 2px 4px #00000050;
+  display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .table-container {
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+th[mat-header-cell] {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+td[mat-cell] {
+  text-align: center;
+  color: black;
+}
+
+table[mat-table] {
+  background-color: #ffffff;
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .table-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  table[mat-table] {
+    background-color: #ffffff;
+    width: 100%;
+    margin: auto;
+  }
+
+}

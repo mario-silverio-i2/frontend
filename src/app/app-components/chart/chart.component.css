@@ -1,0 +1,13 @@
+canvas {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+div > h1 {
+  color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-shadow: 2px 2px 4px #00000050;
+  display: inline-block;
+}

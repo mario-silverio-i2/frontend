@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Assumindo que você envolve seu conteúdo principal em um div com a classe .main-content */
+.main-content {
+  flex: 1;
+}
+
+.app-footer {
+  margin-top: auto; /* Isso empurra o footer para baixo */
+}
+
+.app-footer .container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.app-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}

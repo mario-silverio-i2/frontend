@@ -1,0 +1,22 @@
+<div class="table-container">
+  <h2>Links mais acessados nos últimos 7 dias</h2>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="formatedDate">
+      <th mat-header-cell *matHeaderCellDef class="data-header"> Data </th>
+      <td mat-cell *matCellDef="let element"> {{element.formatedDate}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="link_views">
+      <th mat-header-cell *matHeaderCellDef class="view-header"> Visualizações </th>
+      <td mat-cell *matCellDef="let element"> {{element.link_views}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="link_url">
+      <th mat-header-cell *matHeaderCellDef class="link-header"> Link </th>
+      <td mat-cell *matCellDef="let element"> <a href="{{element.link_url}}" target="_blank">{{element.link_url}}</a> </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

@@ -1,0 +1,36 @@
+.app-header {
+  background-color: #343a40;
+  font-weight: bold;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #18e9de;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+  font: bold;
+  color: #4bbcb6;
+}
